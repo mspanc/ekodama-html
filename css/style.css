@@ -48,7 +48,7 @@ body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #666;
+    color: #999;
 }
 
 a {
@@ -166,7 +166,7 @@ h6 {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #666;
+    color: #999;
     line-height: 1.6;
 }
 
@@ -652,7 +652,7 @@ blockquote footer {
 
 .bg-about {
     position: relative;
-    background: url('http://placehold.it/1980x1000');
+    background: url('/img/home/about-bg.jpg');
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
@@ -1496,7 +1496,6 @@ label input, textarea{
 
 .bg-footer {
     position: relative;
-    background-image: url('http://placehold.it/1980x1000');
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
