@@ -54,11 +54,7 @@ body {
 a {
     color: #9e9b7e;
     text-decoration: none;
-    
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover,
@@ -81,6 +77,10 @@ a:active {
 	background: #0f0f0f;
 }
 
+p.justified {
+    text-align: justify;
+}
+
 
 /*--------------------------------------------------
     02. Custom Button 
@@ -97,11 +97,7 @@ a:active {
     letter-spacing: 2px;
     color: #0f0f0f;
     border-radius: 0;
-    
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-main:hover,
@@ -300,11 +296,7 @@ blockquote footer {
     z-index: 0;
   
     background: rgba(238,238,238,1);
-    background: -moz-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,238,238,1)), color-stop(100%, rgba(238,238,238,0)));
-    background: -webkit-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
-    background: -o-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
-    background: -ms-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
     background: linear-gradient(to right, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=1 );
 }
@@ -322,11 +314,7 @@ blockquote footer {
     padding-right: 35px;
     background-color: #fcfcfc;
     border-color: transparent;
-    
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-default .navbar-brand {
@@ -438,9 +426,6 @@ blockquote footer {
     top: 45%;
     margin: 0 auto -45px;
     border-radius: 100%;
-    -webkit-animation: rotation .75s infinite linear;
-    -moz-animation: rotation .75s infinite linear;
-    -o-animation: rotation .75s infinite linear;
     animation: rotation .75s infinite linear;
 }
 
@@ -457,31 +442,6 @@ blockquote footer {
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
     border-radius: 100%;
-}
-
-@-webkit-keyframes rotation {
-    from {
-        -webkit-transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(359deg)
-    }
-}
-@-moz-keyframes rotation {
-    from {
-        -moz-transform: rotate(0deg)
-    }
-    to {
-        -moz-transform: rotate(359deg)
-    }
-}
-@-o-keyframes rotation {
-    from {
-        -o-transform: rotate(0deg)
-    }
-    to {
-        -o-transform: rotate(359deg)
-    }
 }
 @keyframes rotation {
     from {
@@ -577,17 +537,8 @@ blockquote footer {
     width: 200px;
     height: 40px;
     background-color: transparent;
-  
-    -webkit-transition: all 0.15s ease;
-       -moz-transition: all 0.15s ease;
-         -o-transition: all 0.15s ease;
-            transition: all 0.15s ease;
-
-    -webkit-transform: rotate(270deg);
-       -moz-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-         -o-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transition: all 0.15s ease;
+    transform: rotate(270deg);
 }
 
 .slides-navigation a.prev {
@@ -602,15 +553,11 @@ blockquote footer {
 }
 
 .slides-navigation a.prev:hover {
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 .slides-navigation a.next:hover {
-    -webkit-box-shadow: 0 4px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 4px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 4px 0 0 rgba(158,155,126,1) inset;
+    box-shadow: 0 4px 0 0 rgba(158,155,126,1) inset;
 }
 
 .slides-pagination {
@@ -656,23 +603,14 @@ blockquote footer {
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
-  
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 .progress-bar {
     color: #fff;
     background-color: #9e9b7e;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
-    -webkit-transition: width .6s ease;
-       -moz-transition: width .6s ease;
-         -o-transition: width .6s ease;
-            transition: width .6s ease;
+    box-shadow: none;
+    transition: width .6s ease;
 }
 
 .progress {
@@ -683,10 +621,18 @@ blockquote footer {
     background-color: transparent;
     border-radius: 0px;
     border-bottom: 1px solid #9e9b7e;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
+
+
+.bg-boss {
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /*--------------------------------------------------
@@ -756,11 +702,7 @@ blockquote footer {
     z-index: 3;
     filter: alpha(opacity=0);
     opacity: 0;
-  
-    -webkit-transition: opacity 0.6s ease;
-       -moz-transition: opacity 0.6s ease;
-         -o-transition: opacity 0.6s ease;
-            transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
 }
 
 .work-item .caption .extra {
@@ -783,18 +725,11 @@ blockquote footer {
     right: 25px;
     filter: alpha(opacity=0);
     opacity: 0;
-  
-    -webkit-transition: all 0.6s ease;
-       -moz-transition: all 0.6s ease;
-         -o-transition: all 0.6s ease;
-            transition: all 0.6s ease;
+    transition: all 0.6s ease;
 }
 
 .work-item .caption .titles .title {
-    -webkit-transition: color 0.6s ease;
-       -moz-transition: color 0.6s ease;
-         -o-transition: color 0.6s ease;
-            transition: color 0.6s ease;
+    transition: color 0.6s ease;
 }
 
 .work-item:hover .caption {
@@ -826,18 +761,12 @@ blockquote footer {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-  
-    -webkit-transition: all 0.15s ease;
-       -moz-transition: all 0.15s ease;
-         -o-transition: all 0.15s ease;
-            transition: all 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 .work-btn:hover, .work-btn:active, .work-btn:focus {
     color: #0f0f0f;
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 
@@ -850,11 +779,7 @@ blockquote footer {
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
-  
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 /* Work Details */
@@ -905,10 +830,8 @@ blockquote footer {
 }
 
 .work-navigation a:hover { 
-    color: #0f0f0f; 
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    color: #0f0f0f;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 .work-prev {
@@ -940,11 +863,7 @@ blockquote footer {
     background: url('http://placehold.it/1980x1000');
     background-attachment: fixed;
     background-position: 50% 0;
-  
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 #owl-clients .client {
@@ -978,11 +897,7 @@ blockquote footer {
     cursor: pointer;
     filter: alpha(opacity=40);
     opacity: 0.4;
-    
-    -webkit-transition: all 0.15s ease;
-       -moz-transition: all 0.15s ease;
-         -o-transition: all 0.15s ease;
-            transition: all 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 #sync2 .service-item i {
@@ -1008,9 +923,7 @@ blockquote footer {
 #sync2 .service-item:hover {
     filter: alpha(opacity=100);
     opacity: 1;
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 
@@ -1040,11 +953,7 @@ blockquote footer {
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
-  
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 #owl-testimonials .item {
@@ -1069,9 +978,7 @@ blockquote footer {
     margin: 4px 0;
     border-top: 1px solid #9E9B7E;
     background: none;
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
+    border-radius: 0;
 }
 
 #testimonials .owl-controls .owl-page.active span {
@@ -1108,18 +1015,8 @@ blockquote footer {
     text-align: center;
     border-top: 5px solid #9e9b7e;
     background-color: #fcfcfc;
-  
-    -webkit-transition: all .3s ease;
-       -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-         -o-transition: all .3s ease;
-            transition: all .3s ease;
-  
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
+    transition: all .3s ease;
+    transform: translateY(100%);
 }
 
 .team-member .member ul.member-social li {
@@ -1139,11 +1036,7 @@ blockquote footer {
 }
 
 .team-member .member:hover ul.member-social {
-    -webkit-transform: translateY(0%);
-       -moz-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-         -o-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
 }
 
 .member-info {
@@ -1189,11 +1082,7 @@ blockquote footer {
     z-index: 3;
     filter: alpha(opacity=100);
     opacity: 1;
-  
-    -webkit-transition: opacity 0.6s ease;
-       -moz-transition: opacity 0.6s ease;
-         -o-transition: opacity 0.6s ease;
-            transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
 }
 
 .news-list-item .caption .date {
@@ -1216,11 +1105,7 @@ blockquote footer {
     right: 25px;
     filter: alpha(opacity=100);
     opacity: 1;
-  
-    -webkit-transition: all 0.6s ease;
-       -moz-transition: all 0.6s ease;
-         -o-transition: all 0.6s ease;
-            transition: all 0.6s ease;
+    transition: all 0.6s ease;
 }
 
 .news-list-item .caption .titles .title {
@@ -1266,10 +1151,8 @@ blockquote footer {
 }
 
 .page-navigation a:hover { 
-    color: #0f0f0f; 
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    color: #0f0f0f;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 .page-prev {
@@ -1360,6 +1243,7 @@ blockquote footer {
 
 #cd-google-map {
     position: relative;
+    padding-bottom: 0;
 }
 
 #cd-google-map .address {
@@ -1484,9 +1368,7 @@ label input, textarea{
 
 .contact-btn:hover,.contact-btn:active,.contact-btn:focus{
     color: #0f0f0f;
-    -webkit-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-       -moz-box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
-            box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
+    box-shadow: 0 -5px 0 0 rgba(158,155,126,1) inset;
 }
 
 
@@ -1499,11 +1381,7 @@ label input, textarea{
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
-  
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 #footer .footer-social {
