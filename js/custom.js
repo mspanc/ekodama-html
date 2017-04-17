@@ -69,8 +69,8 @@ $(function () {
 
   $(function() {
     $('#slides').superslides({
-      animation: "fade",
-      play: 10000,
+      // animation: "fade",
+      // play: 10000,
       slide_easing: 'easeInOutCubic',
       slide_speed: 800,
       pagination: true,
@@ -456,3 +456,17 @@ $(function () {
 
 
 });
+
+
+/*--------------------------------------------------
+    FAQ
+---------------------------------------------------*/
+
+  jQuery(document).ready(function($){
+    $('.faq-question').click(function(e) {
+      e.preventDefault();
+
+      var questionId = $(e.target).data("question-id");
+      $(".faq-answer[data-question-id=" + questionId + "]").slideToggle();
+    });
+  });
